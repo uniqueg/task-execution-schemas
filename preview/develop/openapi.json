@@ -309,13 +309,18 @@
       },
       "tesCreateTaskResponse": {
         "required": [
-          "id"
+          "id",
+          "bla"
         ],
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
             "description": "Task identifier assigned by the server."
+          },
+          "bla": {
+            "type": "string",
+            "description": "Test prop."
           }
         },
         "description": "CreateTaskResponse describes a response from the CreateTask endpoint. It\nwill include the task ID that can be used to look up the status of the job."
@@ -323,7 +328,8 @@
       "tesExecutor": {
         "required": [
           "command",
-          "image"
+          "image",
+          "workdir"
         ],
         "type": "object",
         "properties": {
