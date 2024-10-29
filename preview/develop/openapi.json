@@ -328,7 +328,8 @@
       "tesExecutor": {
         "required": [
           "command",
-          "image"
+          "image",
+          "workdir"
         ],
         "type": "object",
         "properties": {
