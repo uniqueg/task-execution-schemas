@@ -339,15 +339,11 @@ components:
     tesCreateTaskResponse:
       required:
         - id
-        - bla
       type: object
       properties:
         id:
           type: string
           description: Task identifier assigned by the server.
-        bla:
-          type: string
-          description: Test prop.
       description: >-
         CreateTaskResponse describes a response from the CreateTask endpoint. It
 
